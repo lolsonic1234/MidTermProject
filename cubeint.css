@@ -1,0 +1,27 @@
+.Welcome {
+    font-size: 470%;
+    font-family: monospace;
+    position: absolute;
+    right: 25%;
+    top: 25%;
+}
+
+.loadingBar {
+    background-color: black;
+    border-radius: 9px;
+    min-width: 120%;
+    margin-left: -6%;
+}
+
+#loading {
+    color: white; 
+    font-family: Fantasy;
+    font-size: 50px;
+    color: lawngreen;
+    margin-left: -80%;
+    transition: margin-left 7s;
+}
+
+.theGame {
+    visibility: hidden;
+}
