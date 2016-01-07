@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Syncopate:700);
+
 .Welcome {
     font-size: 470%;
     font-family: monospace;
@@ -22,6 +24,7 @@
     transition: margin-left 7s;
 }
 
-.theGame {
-    visibility: hidden;
+.title {
+    text-align: center;
+    font-family: "Syncopate"
 }
