@@ -4,7 +4,6 @@ var size = [window.width,window.height];
 
 $(document).ready(function(){
     console.log("Jquery Started Up!");
-    /*loadingAnimController(); */
 });
 
 $(window).resize(function(){
