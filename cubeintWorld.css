@@ -74,10 +74,49 @@ div, .hotbar {
     background-color: rgb(220,220,255);
 }
 
+.cubeLimit {
+    visibility: invisible;
+    display: none;
+    margin-right: 10px;
+    height: 60%;
+    width: 30%;
+    float: right;
+    background-color: rgb(220,220,255);
+}
+
+.cubeSpawn {
+    visibility: invisible;
+    display: none;
+    margin-right: 10px;
+    height: 60%;
+    width: 30%;
+    float: right;
+    background-color: rgb(220,220,255);
+}
+
+.cubeSpawnSir {
+    visibility: invisible;
+    display: none;
+    margin-right: 10px;
+    height: 60%;
+    width: 30%;
+    float: right;
+    background-color: rgb(220,220,255);
+}
+
 .img1 {
     height: 50px;
     width: 50px;
     background-color: blue;
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+}
+
+.img1Sold {
+    height: 50px;
+    width: 50px;
+    background-color: Red;
     margin-top: 5px;
     margin-left: 5px;
     float: left;
@@ -99,7 +138,77 @@ h4 {
     margin-top: -50px;
 }
 
-.randomDiv:hover {
-    background-color: rosybrown;
+.IncreaseLimit {
+    text-align: center;
+    font-size: 30px;
+    background-color: paleturquoise;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 5px;
+}
+
+.currentLimit {
+    text-align: center;
+    font-size: 25px;
+    background-color: paleturquoise;
+    width: 60%;
+    margin-left: 20%;
+    border-radius: 5px;
+}
+
+.IncreaseSpawn {
+    text-align: center;
+    font-size: 30px;
+    background-color: paleturquoise;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 5px;
+}
+
+.IncreaseSpawnSir {
+    text-align: center;
+    font-size: 30px;
+    background-color: paleturquoise;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 5px;
+}
+
+.currentSpawn {
+    text-align: center;
+    font-size: 25px;
+    background-color: paleturquoise;
+    width: 60%;
+    margin-left: 20%;
+    border-radius: 5px;
+}
+
+.currentSpawnSir {
+    text-align: center;
+    font-size: 25px;
+    background-color: paleturquoise;
+    width: 60%;
+    margin-left: 20%;
+    border-radius: 5px;
+}
+
+.toAllR {
+    text-align: center;
+    font-size: 25px;
+    background-color: paleturquoise;
+    width: 11%;
+    margin-left: 15%;
+    border-radius: 5px;
     position: absolute;
+    margin-top: 367px;
+}
+
+.toAllL {
+    text-align: center;
+    font-size: 25px;
+    background-color: paleturquoise;
+    width: 11%;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 367px;
 }
