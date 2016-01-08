@@ -29,7 +29,7 @@ function loadAnim(){
     
     if(loadingNum >= 3){
         clearInterval(loading);
-        createWindow("http://127.0.0.1:54604/School%20Project/cubeWorld.html", screen.width, screen.height);
+        createWindow("http://lolsonic1234.github.io/MidTermProject/cubeWorld.html", screen.width, screen.height);
         $("h3").css("visibility","visible");
     }
 };
