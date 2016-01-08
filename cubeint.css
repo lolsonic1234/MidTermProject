@@ -1,5 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Syncopate:700);
-
 .Welcome {
     font-size: 470%;
     font-family: monospace;
@@ -22,9 +20,4 @@
     color: lawngreen;
     margin-left: -80%;
     transition: margin-left 7s;
-}
-
-.title {
-    text-align: center;
-    font-family: "Syncopate"
 }
