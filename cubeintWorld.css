@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Syncopate:700);
+
+html, body { 
+    height: 100%; 
+    width: 100%; 
+    margin: 0; 
+}
+
+div, .hotbar { 
+    height: 100%; 
+    width: 100%; 
+    background: white; 
+}
+
+.title {
+    text-align: center;
+    font-family: "Syncopate"
+}
+
+.boxHolder {
+    width: 90%;
+    height: 85%;
+    background-color: gray;
+    margin-left: 5%;
+    border-radius: 10px;
+}
+
+.derp {
+    height: auto;
+}
+
+.hotbar {
+    background-color: rgb(0,220,255);
+    height: 100%;
+    float: right;
+    width: 10%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.shop {
+    height: auto;
+    font-size: 95%;
+    text-align: center;
+    background-color: rgb(220,220,255);
+    border-radius: 10px;
+}
+
+.shop2 {
+    height: auto;
+    font-size: 95%;
+    text-align: center;
+    background-color: rgb(220,220,255);
+    border-radius: 10px;
+    margin-top: 100%;
+}
+
+.shop3 {
+    height: auto;
+    font-size: 95%;
+    text-align: center;
+    background-color: rgb(220,220,255);
+    border-radius: 10px;
+    margin-top: 100%;
+}
+
+.cubeSkins {
+    visibility: visible;
+    display: block;
+    margin-right: 10px;
+    height: 60%;
+    width: 30%;
+    float: right;
+    background-color: rgb(220,220,255);
+}
+
+.img1 {
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+}
+
+h4 {
+    float: left;
+}
+
+.spawnIn{
+    background-color: darkgray;
+    width: 70%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.money {
+    float: left;
+    margin-top: -50px;
+}
+
+.randomDiv:hover {
+    background-color: rosybrown;
+    position: absolute;
+}
