@@ -17,7 +17,7 @@ var spawnCube = setInterval(spawnRandom, cubeSpawnTimeCom);
 
 var divs = 0;
 var divSir = 0;
-var money = 100000000;
+var money = 0;
 var maxDiv = 5;
 var maxDivSir = 1;
 var sirBought = 0;
