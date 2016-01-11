@@ -84,6 +84,16 @@ div, .hotbar {
     background-color: rgb(220,220,255);
 }
 
+.cubeLimitSir {
+    visibility: invisible;
+    display: none;
+    margin-right: 10px;
+    height: 60%;
+    width: 30%;
+    float: right;
+    background-color: rgb(220,220,255);
+}
+
 .cubeSpawn {
     visibility: invisible;
     display: none;
@@ -148,6 +158,24 @@ h4 {
 }
 
 .currentLimit {
+    text-align: center;
+    font-size: 25px;
+    background-color: paleturquoise;
+    width: 60%;
+    margin-left: 20%;
+    border-radius: 5px;
+}
+
+.IncreaseLimitSir {
+    text-align: center;
+    font-size: 30px;
+    background-color: paleturquoise;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 5px;
+}
+
+.currentLimitSir {
     text-align: center;
     font-size: 25px;
     background-color: paleturquoise;
