@@ -51,11 +51,11 @@ $(".IncreaseSpawnSir").click(function(){
         money -= sirSpawnCube;
         sirSpawnCube += 60
         $(".money").html("cubes collected: " + money);
-        $(".IncreaseSpawnSir").html("Decrease Cube Spawn time<br>-[Costs: " + sirSpawnCube + "]-");
+        $(".IncreaseSpawnSir").html("Decrease MLG Spawn time<br>-[Costs: " + sirSpawnCube + "]-");
         sirSpawnTime = sirSpawnTime - 0.1;
         sirSpawnTime = sirSpawnTime.toFixed(1)
         sirSpawnTimeCom = sirSpawnTime * 1000
-        $(".currentSpawnSir").html("Cubes spawn in every<br>-[" + sirSpawnTime + "second]-");
+        $(".currentSpawnSir").html("MLG's spawn in every<br>-[" + sirSpawnTime + "second]-");
         clearInterval(spawnCubeSir)
         spawnCubeSir = setInterval(spawnRandomSir, sirSpawnTimeCom);
     };
