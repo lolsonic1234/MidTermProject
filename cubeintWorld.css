@@ -117,7 +117,7 @@ div, .hotbar {
 .img1 {
     height: 50px;
     width: 50px;
-    background-color: blue;
+    background-color: tan;
     margin-top: 5px;
     margin-left: 5px;
     float: left;
@@ -126,7 +126,7 @@ div, .hotbar {
 .img1Sold {
     height: 50px;
     width: 50px;
-    background-color: Red;
+    background-color: tan;
     margin-top: 5px;
     margin-left: 5px;
     float: left;
