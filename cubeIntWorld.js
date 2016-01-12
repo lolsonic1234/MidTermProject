@@ -11,16 +11,20 @@ var cubeSpawnTimeCom = cubeSpawnTime * 1000;
 var sirSpawnTime = 2.5;
 var sirSpawnTimeCom = sirSpawnTime * 1000;
 
+var spawnCubeJoker = setInterval(spawnRandomJoker, 3500);
 var spawnCubeSir = setInterval(spawnRandomSir, 1000);
 var spawnCube = setInterval(spawnRandom, cubeSpawnTimeCom);
 
 
 var divs = 0;
 var divSir = 0;
+var divJoker = 0;
 var money = 0;
 var maxDiv = 5;
 var maxDivSir = 1;
+var maxDivJoker = 1;
 var sirBought = 0;
+var jokerBought = 0;
 
 
 var cubeLimitCost = 15;
@@ -28,8 +32,13 @@ var costSpawnCube = 30;
 var sirLimitCost = 15;
 var sirSpawnCube = 30;
 
+if(sirBought < 1){
+    clearInterval(spawnCubeSir);
+};
 
-clearInterval(spawnCubeSir);
+if(jokerBought < 1){
+    clearInterval(spawnCubeJoker);
+};
 
 $(".IncreaseSpawn").click(function(){
     if(money >= costSpawnCube && cubeSpawnTime > 0.1){
@@ -85,6 +94,16 @@ $(".shop").click(function(){
         "width": "0%",
         "visibility": "invisible"
     });
+    $(".cubeLimit").css({
+            "display": "none",
+            "width": "0%",
+            "visibility": "invisible"
+        });
+    $(".cubeLimitSir").css({
+        "display": "none",
+        "width": "0%",
+        "visibility": "invisible"
+    });
 });
 
 $(".shop2").click(function(){
@@ -111,6 +130,11 @@ $(".shop2").click(function(){
         "width": "0%",
         "visibility": "invisible"
     });
+    $(".cubeLimitSir").css({
+        "display": "none",
+        "width": "0%",
+        "visibility": "invisible"
+    });
 });
 
 $(".shop3").click(function(){
@@ -133,6 +157,16 @@ $(".shop3").click(function(){
     });
     
     $(".cubeSpawnSir").css({
+        "display": "none",
+        "width": "0%",
+        "visibility": "invisible"
+    });
+    $(".cubeLimit").css({
+            "display": "none",
+            "width": "0%",
+            "visibility": "invisible"
+        });
+    $(".cubeLimitSir").css({
         "display": "none",
         "width": "0%",
         "visibility": "invisible"
@@ -226,8 +260,8 @@ $(".IncreaseLimitSir").click(function(){
         maxDivSir += 1;
         sirLimitCost = Math.floor(sirLimitCost + maxDivSir * randomPriceIncrement);
         randomPriceIncrement = Math.floor(Math.random() * 4) + 1;
-        $(".IncreaseLimitSir").html("Increase Sir Limit by 1<br> -[" + sirLimitCost+ "]-");
-        $(".currentLimitSir").html("Current cube limit is <br> -[" + maxDivSir + "]-");
+        $(".IncreaseLimitSir").html("Increase MLG Limit by 1<br> -[" + sirLimitCost+ "]-");
+        $(".currentLimitSir").html("Current MLG limit is <br> -[" + maxDivSir + "]-");
     };
 });
 
@@ -236,7 +270,7 @@ function cubeAmount(){
 };
 
 $(".img1").click(function(){
-    if(money >= 5 && sirBought < 1){
+    if(money >= 10 && sirBought < 1){
         spawnCubeSir = setInterval(spawnRandomSir, sirSpawnTimeCom);
         money -= 5;
         $(".money").html("cubes collected: " + money);
@@ -244,7 +278,20 @@ $(".img1").click(function(){
         $(".img1").addClass("img1Sold");
         $(".img1").removeClass("img1");
         sirBought += 2;
-    }else if(money < 5 && sirBought < 1){
+    }else if(money < 10 && sirBought < 1){
+        alert("Your poor");
+    };
+});
+
+$(".img2").click(function(){
+    if(money >= 50 && jokerBought < 1){
+        spawnCubeJoker = setInterval(spawnRandomJoker, jokerSpawnTimeCom);
+        money -= 5;
+        $(".money").html("cubes collected: " + money);
+        $(".img2").addClass("img2Sold");
+        $(".img2").removeClass("img2");
+        jokerBought += 2;
+    }else if(money < 50 && jokerBought < 1){
         alert("Your poor");
     };
 });
@@ -285,5 +332,15 @@ function spawnRandomSir(){
     if(divSir < maxDivSir){
         $(".spawnIn").append("<img src='http://i.imgur.com/t1dSFNJ.png' class='img1In' style='position: absolute; min-height: 50px; min-width: 50px; max-height: 50px; max-width: 50px; background-color: blue; margin-left: " + randomWidthLS + "%; margin-top: " + randomHeightLS + "%; transform: rotate(" + randomRotate + "deg)' >");
         divSir += 1;
+    };
+};
+
+function spawnRandomJoker(){
+    randomWidthLS = Math.floor(Math.random() * 28) + 1;
+    randomHeightLS = Math.floor(Math.random() * 39) + 1;
+    randomRotate = Math.floor(Math.random() * 360) + 1;
+    if(divJoker < maxDivJoker){
+        $(".spawnIn").append("<img src='http://i.imgur.com/t1dSFNJ.png' class='img1In' style='position: absolute; min-height: 50px; min-width: 50px; max-height: 50px; max-width: 50px; background-color: blue; margin-left: " + randomWidthLS + "%; margin-top: " + randomHeightLS + "%; transform: rotate(" + randomRotate + "deg)' >");
+        divJoker += 1;
     };
 };
