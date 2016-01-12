@@ -275,7 +275,7 @@ function cubeAmount(){
 $(".img1").click(function(){
     if(money >= 10 && sirBought < 1){
         spawnCubeSir = setInterval(spawnRandomSir, sirSpawnTimeCom);
-        money -= 5;
+        money -= 10;
         $(".money").html("cubes collected: " + money);
         $(".dwiT").html("MLG! -[SOLD]-");
         $(".img1").addClass("img1Sold");
