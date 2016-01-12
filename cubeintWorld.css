@@ -132,6 +132,24 @@ div, .hotbar {
     float: left;
 }
 
+.img2 {
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+}
+
+.img2Sold {
+    height: 50px;
+    width: 50px;
+    background-color: Red;
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+}
+
 h4 {
     float: left;
 }
